@@ -1,0 +1,37 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Snowball/SnowballController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ObjectHit/ObjectHit.cs" Line="72" Column="1" />
+      <File FileName="Assets/GUI/Scripts/GameOver.cs" Line="15" Column="3" />
+      <File FileName="Assets/Scripts/Score/ScoreScript.cs" Line="14" Column="30" />
+      <File FileName="Assets/GUI/Scripts/meterIcons.cs" Line="38" Column="30" />
+      <File FileName="Assets/Scripts/Snowball/SnowballController.cs" Line="31" Column="8" />
+      <File FileName="Assets/Scripts/Score/GetBigger.cs" Line="15" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="GUI" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="ObjectHit" expanded="True" />
+                <Node name="Score" expanded="True" />
+                <Node name="Snowball" expanded="True">
+                  <Node name="SnowballController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
