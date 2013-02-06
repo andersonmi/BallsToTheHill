@@ -5,6 +5,7 @@ ModelImporter:
     4300000: pCube1
     4300002: pCone1
     4300004: polySurface1
+    4300006: pCube2
     7400000: Take 001 //// smalltree3
     7400002: dance //// smalltree3
     100100000: DataTemplate __Singleton__
@@ -15,7 +16,7 @@ ModelImporter:
     materialSearch: 1
   animations:
     generateAnimations: 3
-    bakeSimulation: 0
+    bakeSimulation: 1
     splitAnimations: 1
     animationCompression: 1
     animationRotationError: .5
@@ -25,9 +26,9 @@ ModelImporter:
     clipAnimations:
     - name: dance
       firstFrame: 1
-      lastFrame: 48
+      lastFrame: 47
       wrapMode: 2
-      loop: 0
+      loop: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -60,10 +61,10 @@ ModelImporter:
     joint1:
       data:
         first: 1
-        second: aa860100
+        second: ac860100
       data:
         first: 4
-        second: 8a1a0600
+        second: 8c1a0600
       data:
         first: 137
         second: a00bd100
@@ -77,17 +78,38 @@ ModelImporter:
     joint3:
       data:
         first: 1
-        second: ac860100
+        second: b8860100
       data:
         first: 4
-        second: 8c1a0600
+        second: 981a0600
     joint4:
+      data:
+        first: 1
+        second: b4860100
+      data:
+        first: 4
+        second: 941a0600
+    joint5:
       data:
         first: 1
         second: ae860100
       data:
         first: 4
         second: 8e1a0600
+    joint6:
+      data:
+        first: 1
+        second: ba860100
+      data:
+        first: 4
+        second: 9a1a0600
+    joint7:
+      data:
+        first: 1
+        second: b2860100
+      data:
+        first: 4
+        second: 921a0600
     pCone1:
       data:
         first: 1
@@ -102,13 +124,13 @@ ModelImporter:
       data:
         first: 4
         second: 801a0600
-    polySurface1:
+    pCube2:
       data:
         first: 1
-        second: b2860100
+        second: aa860100
       data:
         first: 4
-        second: 921a0600
+        second: 8a1a0600
     transform1:
       data:
         first: 1
