@@ -29,7 +29,7 @@ ModelImporter:
     clipAnimations:
     - name: Hooray
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 18
       wrapMode: 4
       loop: 0
   meshes:
