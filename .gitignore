@@ -16,3 +16,6 @@ Library/previews
 Library/AssetImportState
 
 *.meta
+
+Temp
+Temp/AudioImport.audio
