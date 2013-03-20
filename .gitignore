@@ -19,3 +19,13 @@ Library/AssetImportState
 
 Temp
 Temp/AudioImport.audio
+
+*.csproj
+
+Assembly-CSharp-vs.csproj
+
+*.csproj
+
+*.csproj
+
+*.csproj
