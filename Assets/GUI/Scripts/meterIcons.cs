@@ -5,6 +5,10 @@ using System.Collections;
 
 public class meterIcons : MonoBehaviour {
 	
+	float originalWidth = 1024;
+	float originalHeight = 768;
+	
+	
 	public Texture2D meter01;
 	public Texture2D meter02;
 	public Texture2D meter03;
@@ -29,13 +33,15 @@ public class meterIcons : MonoBehaviour {
 	void Start () {
 	
 		mGB = GameObject.Find("SnowballCollider").GetComponent<GetBigger>();
-		leftX = Screen.width * 0.006f;
-		rightX = Screen.width * 0.115f;
-		heightIncrease = Screen.height * 0.056f;
-		firstY = Screen.height * 0.55f;
-		imageSize = Screen.width * 0.05f;
+		leftX = Screen.width * 0.007f;
+		rightX = Screen.width * 0.13f;
+		heightIncrease = Screen.height * 0.047f;
+		firstY = Screen.height * 0.46f;
+		imageSize = Screen.width * 0.045f;
 		
 		this.useGUILayout = false; 
+		
+
 	}
 	
 	// Update is called once per frame
@@ -43,6 +49,13 @@ public class meterIcons : MonoBehaviour {
 	
 	}
 	void OnGUI (){
+		// Set matrix
+//		Vector2 ratio = new Vector2(Screen.width/originalWidth , Screen.height/originalHeight );
+//		Matrix4x4 guiMatrix = Matrix4x4.identity;
+//		guiMatrix.SetTRS(new Vector3(1, 1, 1), Quaternion.identity, new Vector3(ratio.x, ratio.y, 1));
+//		GUI.matrix = guiMatrix;
+		
+		
 	GUI.contentColor = Color.yellow;	
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 0, imageSize, imageSize), meter01);
 	GUI.Label(new Rect(leftX, firstY - heightIncrease * 1, imageSize, imageSize), meter02);
@@ -53,7 +66,7 @@ public class meterIcons : MonoBehaviour {
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 6, imageSize, imageSize), meter07);
 	GUI.Label(new Rect(leftX, firstY - heightIncrease * 7, imageSize, imageSize), meter08);
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 8, imageSize, imageSize), meter09);
-	GUI.Label(new Rect(leftX + imageSize / 2, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
+	GUI.Label(new Rect(leftX + imageSize, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
 	
 	if (mGB.getCurrentScale() >= 1){
 		GUI.contentColor = Color.green;
@@ -66,7 +79,7 @@ public class meterIcons : MonoBehaviour {
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 6, imageSize, imageSize), meter07);
 	GUI.Label(new Rect(leftX, firstY - heightIncrease * 7, imageSize, imageSize), meter08);
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 8, imageSize, imageSize), meter09);
-	GUI.Label(new Rect(leftX + imageSize / 2, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
+	GUI.Label(new Rect(leftX + imageSize, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
 	
 		}
 	if (mGB.getCurrentScale() >= 1.5){
@@ -86,7 +99,7 @@ public class meterIcons : MonoBehaviour {
 		GUI.Label(new Rect(rightX, firstY - heightIncrease * 6, imageSize, imageSize), meter07);
 	GUI.Label(new Rect(leftX, firstY - heightIncrease * 7, imageSize, imageSize), meter08);
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 8, imageSize, imageSize), meter09);
-	GUI.Label(new Rect(leftX + imageSize / 2, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
+	GUI.Label(new Rect(leftX + imageSize, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
 	
 		}
 	if (mGB.getCurrentScale() >= 2.5){
@@ -105,7 +118,7 @@ public class meterIcons : MonoBehaviour {
 		GUI.contentColor = Color.red;
 	GUI.Label(new Rect(leftX, firstY - heightIncrease * 7, imageSize, imageSize), meter08);
 	GUI.Label(new Rect(rightX, firstY - heightIncrease * 8, imageSize, imageSize), meter09);
-	GUI.Label(new Rect(leftX + imageSize / 2, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
+	GUI.Label(new Rect(leftX + imageSize, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
 	
 		}
 
@@ -124,7 +137,7 @@ public class meterIcons : MonoBehaviour {
 		GUI.Label(new Rect(rightX, firstY - heightIncrease * 8, imageSize, imageSize), meter09);
 		
 		GUI.contentColor = Color.red;
-		GUI.Label(new Rect(leftX + imageSize / 2, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
+		GUI.Label(new Rect(leftX + imageSize, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
 		}
 		
 	if (mGB.getCurrentScale() >= 5){
@@ -132,7 +145,7 @@ public class meterIcons : MonoBehaviour {
 		GUI.Label(new Rect(rightX, firstY - heightIncrease * 4, imageSize, imageSize), meter05);
 		
 		GUI.contentColor = Color.yellow;		
-		GUI.Label(new Rect(leftX + imageSize / 2, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
+		GUI.Label(new Rect(leftX + imageSize, firstY - heightIncrease * 9 - imageSize / 2, imageSize*2, imageSize), meter10);		
 		}
 	if (mGB.getCurrentScale() >= 6){
 		GUI.contentColor = Color.green;
@@ -149,6 +162,11 @@ public class meterIcons : MonoBehaviour {
 	if (mGB.getCurrentScale() >= 9){
 		GUI.contentColor = Color.green;
 		GUI.Label(new Rect(rightX, firstY - heightIncrease * 8, imageSize, imageSize), meter09);
-		}						
+		}
+		
+		// Reset matrix
+		GUI.matrix = Matrix4x4.identity;
 	}
+	
+	
 }

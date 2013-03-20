@@ -6,6 +6,7 @@ using System.Collections;
 public class mainMenu : MonoBehaviour {
 	
 	public GUISkin menuSkin;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -18,18 +19,21 @@ public class mainMenu : MonoBehaviour {
 	}
 	
 	void OnGUI(){
+		// Set matrix
+		
 		GUI.skin = menuSkin;
-		if (GUI.Button(new Rect(Screen.width/2 - 240, Screen.height * 0.45f + Screen.width / 8 , 120, 120), "Start Game", "menuButton"))
+		if (GUI.Button(new Rect(Screen.width * 0.5f - 200, Screen.height * 0.65f , Screen.width * 0.1171f, Screen.height * 0.1562f), "Start\nGame", "menuButton"))
 			Application.LoadLevel("MainLevel");
 		
-		if (GUI.Button(new Rect(Screen.width/2 - 120, Screen.height  * 0.45f + Screen.width / 8 , 120, 120), "How to Play", "menuButton"))
+		if (GUI.Button(new Rect(Screen.width * 0.5f  - 80, Screen.height  * 0.65f, Screen.width * 0.1171f, Screen.height * 0.1562f), "How to\nPlay", "menuButton"))
 			Application.LoadLevel("TutorialLevel");			
 		
-		if (GUI.Button(new Rect(Screen.width/2 + 000, Screen.height  * 0.45f + Screen.width / 8 , 120, 120), "Credits", "menuButton"))
+		if (GUI.Button(new Rect(Screen.width* 0.5f + 35,Screen.height  * 0.65f, Screen.width * 0.1171f, Screen.height * 0.1562f), "Credits", "menuButton"))
 			Application.LoadLevel("Credits");		
 		
-		if (GUI.Button(new Rect(Screen.width/2 + 120, Screen.height  * 0.45f + Screen.width / 8 , 120, 120), "Exit Game", "menuButton"))
+		if (GUI.Button(new Rect(Screen.width * 0.5f + 150, Screen.height  * 0.65f, Screen.width * 0.1171f, Screen.height * 0.1562f), "Exit\nGame", "menuButton"))
 			Application.Quit();
+		
 		
 			
 	}
