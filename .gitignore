@@ -1,0 +1,6 @@
+
+*.csproj
+
+*.pidb
+
+Assets/.DS_Store
